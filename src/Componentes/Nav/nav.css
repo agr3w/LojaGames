@@ -1,0 +1,146 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.navbar__logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.navbar__options {
+  display: flex;
+  padding: 20px;
+  margin-left: 70px;
+}
+
+.navbar__option {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar__cart {
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.cart__img {
+  width: 30px;
+}
+
+.navbar__profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar__profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  padding: 10px;
+  z-index: 999;
+}
+
+.navbar__profile:hover .navbar__dropdown {
+  display: block;
+}
+
+.navbar__dropdown-option {
+  display: block;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 610px) {
+
+  .navbar__logo-2 {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    padding-right: 20px;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start; 
+  }
+
+}
+
+@media screen and (max-width: 610px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  
+  .navbar__options {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  .navbar__logo {
+    display: none;
+  }
+
+  .navbar__logo-2 {
+    display: inline-block;
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  .navbar__cart {
+    margin-left: 0;
+  }
+
+  .cart__img {
+    width: 30px;
+  }
+
+  .navbar__profile {
+    margin-right: 10px;
+  }
+
+  .navbar__profile-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+
+.navbar {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__profile {
+  padding-top: 20px;
+}
+
+}
